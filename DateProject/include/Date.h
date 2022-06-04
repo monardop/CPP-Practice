@@ -13,7 +13,7 @@ class Date
         Date addDays(int day) const;
         int daysBetween(const Date* date2) const;
         int operator -(const Date* date2) const;
-
+        Date operator +(int days) const;
 };
 
 #endif // DATE_H
