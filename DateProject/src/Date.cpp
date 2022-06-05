@@ -1,4 +1,4 @@
-#include "Date.h"
+#include "../include/Date.h"
 
 Date::Date()
 {
@@ -17,7 +17,7 @@ Date Date:: addDays(int days) const {
     return answer;
 }
 int Date::daysBetween(const Date* date2) const{
-    return this->relDay - date2->relDay; 
+    return this->relDay - date2->relDay;
 }
 int Date::operator -(const Date* date2) const {
     return this->relDay - date2->relDay;
