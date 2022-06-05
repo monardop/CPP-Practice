@@ -1,11 +1,13 @@
 #ifndef DATE_H
 #define DATE_H
-
+#define BASE_YEAR 1601
 
 class Date
 {
     private:
-    int relDay;
+        int relDay;
+        static int gregorianDay(int day, int month, int year);
+        static bool leapYear(int year);
     public:
         Date();
         Date(int day, int month, int year);
