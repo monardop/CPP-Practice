@@ -23,4 +23,5 @@ class Date
 
 };
 
+ostream& operator <<(ostream& out, const Date& d);
 #endif // DATE_H
