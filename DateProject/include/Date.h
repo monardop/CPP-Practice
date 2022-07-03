@@ -26,5 +26,5 @@ class Date
 };
 
 ostream& operator <<(ostream& out, const Date& d);
-
+istream& operator >>(istream& , Date& );
 #endif // DATE_H

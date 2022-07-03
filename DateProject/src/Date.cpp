@@ -69,3 +69,14 @@ ostream& operator <<(ostream& out, const Date& d) {
     out << day << "/" << month << "/" <<year;
     return out;
 }
+istream& operator >>(istream& in, Date& date)
+{
+	int d, m, y;
+	char c;
+	
+	in >> d >> c >> m >> c >> y;
+	
+	date.setDMY(d, m, y);
+	
+	return in;
+}
